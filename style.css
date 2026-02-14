@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background: #f4f6f9;
+    color: #1e293b;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+}
+
+.navbar .logo {
+    font-weight: 700;
+    font-size: 20px;
+    color: #00ff88;
+}
+
+.navbar nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+/* HERO */
+.hero {
+    height: 90vh;
+    background: linear-gradient(rgba(0,0,30,0.8), rgba(0,0,50,0.9)),
+                url("d7d4b9ca3b3fe1bb9a80954270020b7e.jpg") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    color: white;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.hero h1 span {
+    color: #00ff88;
+}
+
+.hero p {
+    margin-bottom: 30px;
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+.btn-primary {
+    background: #2563eb;
+    padding: 12px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background: #1d4ed8;
+}
+
+/* SERVIÇOS */
+.servicos {
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.servicos h2 {
+    margin-bottom: 40px;
+    font-size: 30px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/* DIFERENCIAIS */
+.diferenciais {
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 10%;
+    background: linear-gradient(135deg, #0f172a, #1e3a8a);
+    color: white;
+    flex-wrap: wrap;
+}
+
+.diferenciais .left,
+.diferenciais .right {
+    flex: 1;
+    min-width: 300px;
+}
+
+.diferenciais ul {
+    margin-top: 20px;
+    list-style: none;
+}
+
+.diferenciais li {
+    margin-bottom: 10px;
+}
+
+/* BOTÃO SECUNDÁRIO */
+.btn-secondary {
+    display: inline-block;
+    margin-top: 20px;
+    background: #00ff88;
+    padding: 12px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    color: #000;
+}
+
+footer p {
+    color: red;
+    background-color: #0f172a;
+    text-align: center;
+}
